@@ -1,8 +1,11 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation";
 
-export default function Home() {
+export default function HomePage() {
+  const router = useRouter();
+
   return (
     <div
       style={{
@@ -18,7 +21,7 @@ export default function Home() {
       }}
     >
       <h1 style={{ fontSize: "3rem", marginBottom: "1rem", color: "#0070f3" }}>
-        Welcome to WeTransfer!
+        Welcome to QuamCon!
       </h1>
       <p style={{ fontSize: "1.25rem", color: "#333", maxWidth: "500px", marginBottom: "2rem" }}>
         Your one-stop admin panel and dashboard to manage everything easily.
@@ -35,7 +38,7 @@ export default function Home() {
           boxShadow: "0 4px 8px rgba(0, 112, 243, 0.4)",
           transition: "background-color 0.3s ease",
         }}
-        onClick={() => alert("Welcome! This is just a placeholder.")}
+        onClick={() => router.push("/sign-in")}
         onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#005bb5")}
         onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#0070f3")}
       >
