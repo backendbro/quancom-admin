@@ -21,7 +21,7 @@ export default function HomePage() {
       }}
     >
       <h1 style={{ fontSize: "3rem", marginBottom: "1rem", color: "#0070f3" }}>
-        Welcome to QuamCon!
+        Welcome to WeTransfer!
       </h1>
       <p style={{ fontSize: "1.25rem", color: "#333", maxWidth: "500px", marginBottom: "2rem" }}>
         Your one-stop admin panel and dashboard to manage everything easily.
